@@ -67,3 +67,40 @@ main h2 {
 }
 
 
+/* PÁGINA DE PROYECTOS */
+
+.proyectos__tabla {
+    min-width: 650px;
+    margin-bottom: 0;
+}
+
+.proyectos__tabla th {
+    white-space: nowrap;
+}
+
+.proyectos__tabla td,
+.proyectos__tabla th {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.proyectos__tabla .badge {
+    font-size: 13px;
+    padding: 8px 12px;
+}  
+
+@media (min-width: 768px) {
+    .proyectos__tabla {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .proyectos__tabla td,
+    .proyectos__tabla th {
+        padding: 18px;
+    }
+}
+
+

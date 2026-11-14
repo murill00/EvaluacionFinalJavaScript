@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+                   style-src 'self' https://cdn.jsdelivr.net;
+                   script-src 'self' https://cdn.jsdelivr.net;
+                   img-src 'self' data:;
+                   object-src 'none';
+                   base-uri 'self';">
+
+    <title>Proyectos | Mi Portafolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Mi Portafolio
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca.html">
+                                Acerca de
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="proyectos.html">
+                                Proyectos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <section class="text-center mb-5">
+            <h1 class="fw-bold">Mis Proyectos</h1>
+
+            <p class="text-muted">
+                Conoce algunos de mis trabajos realizados
+                y las tecnologías que he utilizado.
+            </p>
+        </section>
+
+        <section class="mb-5">
+
+            <h2 class="mb-4">Listado de proyectos</h2>
+
+            <p>
+                En la siguiente tabla se muestran los
+                nombres de los proyectos, tecnologías
+                utilizadas, fechas y estados.
+            </p>
+
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="table-responsive" role="region" aria-label="Tabla de proyectos" tabindex="0">
+
+                        <table class="table table-striped table-hover table-bordered align-middle proyectos__tabla">
+
+
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">
+                                        Nombre del Proyecto
+                                    </th>
+                                    <th scope="col">
+                                        Tecnologías
+                                    </th>
+                                    <th scope="col">
+                                        Fecha
+                                    </th>
+                                    <th scope="col">
+                                        Estado
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">
+                                        Portafolio Web
+                                    </th>
+                                    <td>
+                                        HTML, CSS, Bootstrap
+                                    </td>
+                                    <td>
+                                        Noviembre 2026
+                                    </td>
+                                    <td>
+                                        <span class="badge text-bg-warning">
+                                            En desarrollo
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Sica-Track
+                                    </th>
+                                    <td>
+                                        TypeScript 
+                                    </td>
+                                    <td>
+                                        Octubre 2026
+                                    </td>
+                                    <td>
+                                        <span class="badge text-bg-success">
+                                            Finalizado
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        SILAB
+                                    </th>
+                                    <td>
+                                        HTML, CSS, JavaScript
+                                    </td>
+                                    <td>
+                                        Septiembre 2026
+                                    </td>
+                                    <td>
+                                        <span class="badge text-bg-success">
+                                            Finalizado
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        Formulario Web
+                                    </th>
+                                    <td>
+                                        HTML, CSS, JavaScript
+                                    </td>
+                                    <td>
+                                        Agosto 2026
+                                    </td>
+                                    <td>
+                                        <span class="badge text-bg-success">
+                                            Finalizado
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="text-center mb-4">
+
+            <h2>¿Quieres saber más?</h2>
+
+            <p>
+                Puedes comunicarte conmigo a través
+                de la página de contacto.
+            </p>
+
+            <a href="contacto.html" class="btn btn-primary btn-lg">
+                Ir a contacto
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-primary-subtle text-black text-center py-4">
+        <div class="container">
+
+            <p class="mb-0">
+                &copy; 2026 Mi Portafolio Emi.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

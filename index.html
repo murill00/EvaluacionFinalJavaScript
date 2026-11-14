@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+                   style-src 'self' https://cdn.jsdelivr.net;
+                   script-src 'self' https://cdn.jsdelivr.net;
+                   img-src 'self' data:;
+                   object-src 'none';
+                   base-uri 'self';">
+
+    <title>Inicio | Mi Portafolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary-subtle"> 
+            <div class="container">
+
+                <a class="navbar-brand fw-bold mt-2" href="index.html">
+                    Mi Portafolio
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="portfolio__hero text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold mt-3">
+                    Bienvenido a mi portafolio
+                </h1>
+
+                <p class="lead mt-3">
+                    Me gusta el desarrollo web y el Frontend.
+                    Aquí podrás conocer mis habilidades y proyectos.
+                </p>
+
+                <a href="proyectos.html" class="btn btn-light btn-lg mt-3">
+                    Ver mis proyectos
+                </a>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            <div class="row g-4">
+
+                <!-- Sección de información -->
+                <section class="col-12 col-lg-8">
+                    <h2>Sobre mi trabajo</h2>
+
+                    <p>
+                        Me interesa el desarrollo de sitios web modernos,
+                        accesibles y adaptables a diferentes dispositivos.
+                    </p>
+
+                    <div class="row g-3 mt-3">
+
+                        <div class="col-12 col-md-6">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">HTML5</h3>
+                                    <p class="card-text">
+                                        Creación de páginas web utilizando
+                                        estructuras semánticas.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Bootstrap</h3>
+                                    <p class="card-text">
+                                        Diseño de interfaces responsive
+                                        mediante componentes reutilizables.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+                
+                <aside class="col-12 col-lg-4">
+                    <div class="portfolio__aside p-4 rounded">
+                        <h2 class="h4">Información adicional</h2>
+
+                        <p>
+                            Actualmente estoy fortaleciendo mis
+                            conocimientos en desarrollo web.
+                        </p>
+
+                        <h3 class="h5">Tecnologías</h3>
+
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap 5</li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-primary-subtle text-black  text-center py-4">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 Mi Portafolio Emi. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

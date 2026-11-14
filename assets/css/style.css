@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.portfolio__hero {
+    color: white;
+    padding: 90px 20px;
+}
+
+.portfolio__aside {
+    height: 100%;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+    .portfolio__hero {
+        padding: 110px 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .portfolio__hero {
+        padding: 130px 40px;
+    }
+}
+

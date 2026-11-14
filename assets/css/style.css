@@ -29,3 +29,41 @@ body {
     }
 }
 
+
+/* PÁGINA ACERCA DE */
+
+.perfil__foto {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+main h2 {
+    color: #212529;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .perfil__foto {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (min-width: 992px) {
+    .perfil__foto {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+

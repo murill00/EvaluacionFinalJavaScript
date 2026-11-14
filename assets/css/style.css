@@ -104,3 +104,70 @@ main h2 {
 }
 
 
+/* DISEÑO DE CONTACTO */
+
+.contacto-page {
+    background-color: #f3f6fc;
+    min-height: 85vh;
+}
+
+.contacto__contenedor {
+    max-width: 760px;
+    width: 100%;
+}
+
+.contacto__card {
+    background-color: #ffffff;
+    border-radius: 18px;
+}
+
+.contacto__card h2 {
+    color: #172b4d;
+}
+
+.contacto__card .form-label {
+    font-weight: 600;
+    color: #344054;
+}
+
+.contacto__card .form-control,
+.contacto__card .form-select {
+    border: 1px solid #dbe2ee;
+    border-radius: 10px;
+    padding: 12px 15px;
+    background-color: #f9fbff;
+}
+
+.contacto__card .form-control:focus,
+.contacto__card .form-select:focus {
+    border-color: #3265df;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(50, 101, 223, 0.12);
+}
+
+.contacto__card .btn-primary {
+    background-color: #3265df;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-weight: 600;
+}
+
+.contacto__card .btn-primary:hover {
+    background-color: #214ab0;
+}
+
+@media (min-width: 768px) {
+    .contacto-page h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .contacto__contenedor {
+        max-width: 760px;
+    }
+}
+
+
+

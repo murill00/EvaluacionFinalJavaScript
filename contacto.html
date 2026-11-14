@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+                   style-src 'self' https://cdn.jsdelivr.net;
+                   script-src 'self' https://cdn.jsdelivr.net;
+                   img-src 'self' data:;
+                   object-src 'none';
+                   base-uri 'self';">
+
+    <title>Contacto | Mi Portafolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold mt-3" href="index.html">
+                    Mi Portafolio
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca.html">
+                                Acerca de
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  " href="proyectos.html">
+                                Proyectos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="contacto-page py-5">
+
+        <div class="container">
+
+            <section class="text-center mb-5">
+
+                <h1 class="fw-bold mt-3">
+                    Hablemos de tu próximo proyecto
+                </h1>
+
+                <p class="text-muted">
+                    Completa el formulario.
+                </p>
+
+            </section>
+
+            <section class="contacto__contenedor mx-auto">
+
+                <div class="card contacto__card border-0 shadow-lg rounded-4">
+
+                    <div class="card-body p-4 p-md-5">
+
+                        <form id="formContacto" novalidate>
+
+                            <div class="row g-4">
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="nombre" class="form-label">
+                                        Nombre completo
+                                    </label>
+
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Tu nombre" maxlength="60" autocomplete="name" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa tu nombre.
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="correo" class="form-label">
+                                        Correo electrónico
+                                    </label>
+
+                                    <input type="email" class="form-control" id="correo" name="correo"
+                                        placeholder="tu@correo.com" maxlength="100" autocomplete="email" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa un correo válido.
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <label for="password" class="form-label">
+                                        Contraseña temporal
+                                    </label>
+
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Mínimo 8 caracteres" minlength="8" maxlength="30"
+                                        autocomplete="new-password" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa al menos 8 caracteres.
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <label for="motivo" class="form-label">
+                                        Motivo del contacto
+                                    </label>
+
+                                    <select class="form-select" id="motivo" name="motivo" required>
+
+                                        <option value="" selected disabled>
+                                            Selecciona una opción
+                                        </option>
+
+                                        <option value="consulta">
+                                            Consulta general
+                                        </option>
+
+                                        <option value="proyecto">
+                                            Información de proyectos
+                                        </option>
+
+                                        <option value="colaboracion">
+                                            Colaboración
+                                        </option>
+
+                                        <option value="otro">
+                                            Otro
+                                        </option>
+
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona un motivo.
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <fieldset>
+
+                                        <legend class="fs-6 fw-semibold">
+                                            Prioridad de la consulta
+                                        </legend>
+
+                                        <div class="d-flex gap-4">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="prioridad"
+                                                    id="normal" value="normal" required>
+
+                                                <label class="form-check-label" for="normal">
+                                                    Normal
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="prioridad"
+                                                    id="urgente" value="urgente">
+
+                                                <label class="form-check-label" for="urgente">
+                                                    Urgente
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                    </fieldset>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <label for="archivo" class="form-label">
+                                        Archivo adjunto (opcional)
+                                    </label>
+
+                                    <input type="file" class="form-control" id="archivo" name="archivo"
+                                        accept=".pdf,.jpg,.jpeg,.png">
+
+                                    <div class="form-text">
+                                        PDF, JPG o PNG. Máximo 2 MB.
+                                    </div>
+
+                                    <div class="invalid-feedback" id="archivoError">
+                                        Revisa el archivo.
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <label for="mensaje" class="form-label">
+                                        Tu mensaje
+                                    </label>
+
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" maxlength="500"
+                                        placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+
+                                    <div class="invalid-feedback">
+                                        Escribe tu mensaje.
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <div class="form-check">
+
+                                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos"
+                                            required>
+
+                                        <label class="form-check-label" for="terminos">
+                                            Acepto los términos y condiciones
+                                            de este formulario.
+                                        </label>
+
+                                        <div class="invalid-feedback">
+                                            Debes aceptar los términos.
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        Enviar Datos
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                        <div id="mensajeEstado" class="alert d-none mt-4" role="status" aria-live="polite">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-primary-subtle text-black text-center py-4">
+        <div class="container">
+
+            <p class="mb-0">
+                &copy; 2026 Mi Portafolio Emi.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
